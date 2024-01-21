@@ -2,4 +2,4 @@
 
 Backend repo za GameNightScout
 
-backent commit test2
+rad sa 2 github repozitorija backend commit
