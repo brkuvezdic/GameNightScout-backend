@@ -30,6 +30,10 @@ const listingSchema = new mongoose.Schema(
       type: Boolean,
       required: true,
     },
+    time: {
+      type: Date,
+      required: true,
+    },
     imageUrls: {
       type: Array,
       required: true,
