@@ -60,12 +60,11 @@ export const getListing = async (req, res, next) => {
 
 export const getListings = async (req, res, next) => {
   try {
-    const limit = parseInt(req.query.limit) || 9;
+    const limit = parseInt(req.query.limit) || 0;
     const startIndex = parseInt(req.query.startIndex) || 0;
     const searchTerm = req.query.searchTerm || "";
     const sort = req.query.sort || "createdAt";
     const order = req.query.order || "desc";
-
 
     const filter = {
       $or: [
@@ -83,7 +82,6 @@ export const getListings = async (req, res, next) => {
     if (req.query.slot) {
       filter.slot = parseInt(req.query.slot);
     }
-
 
     const listings = await Listing.find(filter)
       .sort({ [sort]: order })
