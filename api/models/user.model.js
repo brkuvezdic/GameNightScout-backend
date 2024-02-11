@@ -7,7 +7,6 @@ const userSchema = new mongoose.Schema(
     password: { type: String, required: true },
     avatar: {
       type: String,
-      default: "https://cdn.jsdelivr.net/npm/react-icons/fa/FaUser.js",
     },
   },
   { timestamps: true }
