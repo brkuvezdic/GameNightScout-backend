@@ -8,7 +8,7 @@ Mentor: doc. dr. sc. Nikola Tanković (ntankovic.unipu.hr)
 
 Kratki opis funkcionalnosti:
 
-AGameNightScout 
+GameNightScout 
 Ciljanja skupina: Osobe koje vole društvene igre i druženja
 2 tipa korisnika: Host(domaćin) i igrači.
 
